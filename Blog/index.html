@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+
+{% for item in site.posts %}
+  <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+  <p>{{ item.description }}</p>
+{% endfor %}

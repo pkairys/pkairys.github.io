@@ -3,3 +3,7 @@ description: A basic website for information about me and what I am up to
 show_downloads: False
 google_analytics:
 theme: jekyll-theme-cayman
+collections:
+  posts:
+    output: true
+    permalink: /blog/:name
