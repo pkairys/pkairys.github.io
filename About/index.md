@@ -2,11 +2,11 @@
 layout: default
 ---
 
-# About Me
+# About me
 
 ### History
 
-I grew up in south Florida and attended the University of South Florida in Tampa. During school I worked at the National Renewable Energy Lab doing research in areas such as materials & chemical informatics, machine learning, and first-principles material modeling. I graduated with my B.Sc. in Chemical Engineerin in 2013 and am currently waiting to attend graduate school.
+I grew up in south Florida and attended the University of South Florida in Tampa. During school I worked at the National Renewable Energy Lab doing research in areas such as materials & chemical informatics, machine learning, and first-principles material modeling. I graduated with my B.Sc. in Chemical Engineerin in 2017 and am currently waiting to attend graduate school.
 
 ### Interests
 
