@@ -8,8 +8,6 @@ import click
 
 local_assets_path = '/home/paul/Documents/Personal/pkairys.github.io/assets/'
 
-@click.command()
-@click.argument('ipynb', type=click.Path(exists=True))
 def nb_to_md(ipynb):
     
     ipynb_path = os.path.abspath(ipynb)
@@ -48,3 +46,7 @@ def nb_to_md(ipynb):
     with open(md_path, 'w') as f:
         f.write(md)
 
+if __name__ == '__main__':
+    
+    import sys
+    nb_to_md(sys.argv[1])

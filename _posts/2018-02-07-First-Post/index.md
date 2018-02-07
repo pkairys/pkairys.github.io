@@ -1,3 +1,9 @@
+---
+layout: default
+description: "An initial post with some dummy code to test the post generation"
+date: 2018-02-08
+title: First Post
+---
 
 # This is an inital test post
 Here I will make some plots to make sure that the site works. 
