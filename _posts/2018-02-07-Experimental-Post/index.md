@@ -1,4 +1,9 @@
-
+---
+layout: default
+title: Experimental Test Post
+description: This is an experimental post where I troubleshoot stuff. 
+ispost: True
+---
 # This is an experimental test post
 Here I will occasionally edit to test new functionality. Not to be read. 
 
