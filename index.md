@@ -2,4 +2,6 @@
 layout: default 
 ---
 
-Hello, this is currently my website. It is a little empty. 
+<h1 align='center'>Welcome!</h1>
+
+<p align='center'>Please use the navigation links above to explore this site!</p>
