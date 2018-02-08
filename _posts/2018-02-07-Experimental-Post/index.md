@@ -1,4 +1,4 @@
- ---
+---
 layout: default
 title: Experimental Post
 Description: This is where I troubleshoot functionality for the blog. 
