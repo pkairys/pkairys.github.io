@@ -8,6 +8,15 @@ import click
 
 local_assets_path = '/home/paul/Documents/Personal/pkairys.github.io/assets/'
 
+default_frontmatter = """ ---
+layout: default
+title: No Title Yet
+Description: No description Yet
+ispost: True
+---
+\n
+"""
+
 def nb_to_md(ipynb):
     
     ipynb_path = os.path.abspath(ipynb)
@@ -51,6 +60,7 @@ def nb_to_md(ipynb):
         md = re.sub(pat, replacement, md) 
     
     with open(md_path, 'w') as f:
+        md = default_frontmatter + md
         f.write(md)
 
 if __name__ == '__main__':

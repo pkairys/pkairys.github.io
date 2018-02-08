@@ -1,9 +1,12 @@
----
+ ---
 layout: default
-title: Experimental Test Post
-description: This is an experimental post where I troubleshoot stuff. 
+title: Experimental Post
+Description: Where I test new things. Feel free to explore.
 ispost: True
 ---
+
+
+
 # This is an experimental test post
 Here I will occasionally edit to test new functionality. Not to be read. 
 
@@ -193,6 +196,7 @@ save(p,'./bokeh_files/lorenz.html')  # open a browser
 
 
 
+[//]: # (This is for my own use when generating the markdown from the ipynb to host bokeh plots)
 {{ "assets/2018-02-07-Experimental-Post/lorenz.html" | absolute }}
 
 ## Math
