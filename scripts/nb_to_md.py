@@ -8,10 +8,10 @@ import click
 
 local_assets_path = '/home/paul/Documents/Personal/pkairys.github.io/assets/'
 
-default_frontmatter = """ ---
+default_frontmatter = """---
 layout: default
 title: No Title Yet
-Description: No description Yet
+description: No description Yet
 ispost: True
 ---
 \n
@@ -46,9 +46,9 @@ def nb_to_md(ipynb):
 
     os.rename(files_path, asset_files_path)
 
-    if os.path.exists(bokeh_path):
-        for file in os.listdir(bokeh_path):
-            os.rename(bokeh_path+file,asset_files_path+file)
+#    if os.path.exists(bokeh_path):
+#        for file in os.listdir(bokeh_path):
+#            os.rename(bokeh_path+file,asset_files_path+file)
     
     file_name_pattern = re.compile('(\(.*'+ipynb_name+'_files\/(.*)\))')
     
