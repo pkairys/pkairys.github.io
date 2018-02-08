@@ -1,7 +1,7 @@
  ---
 layout: default
 title: Experimental Post
-Description: Where I test new things. Feel free to explore.
+Description: This is where I troubleshoot functionality for the blog. 
 ispost: True
 ---
 
@@ -83,6 +83,7 @@ fig.set_figwidth(9)
 
 
 ```python
+%%capture
 # Using the texas example
 from bokeh.io import save
 from bokeh.models import (
@@ -139,19 +140,14 @@ hover.tooltips = [
 save(p,'./bokeh_files/texas.html',)
 ```
 
-
-
-
-    '/home/paul/Documents/Personal/pkairys.github.io/_posts/2018-02-07-Experimental-Post/bokeh_files/texas.html'
-
-
-
-{{ "assets/2018-02-07-Experimental-Post/texas.html" | absolute }}
+[//]: # (This is for my own use when generating the markdown from the ipynb to host bokeh plots)
+{% include_relative bokeh_files/texas.html %}
 
 ### Lorenz attractor plot
 
 
 ```python
+%%capture
 # Using the lorenz attractor example
 import numpy as np
 from scipy.integrate import odeint
@@ -189,15 +185,8 @@ p.multi_line(np.array_split(xprime, 7), np.array_split(z, 7),
 save(p,'./bokeh_files/lorenz.html')  # open a browser
 ```
 
-
-
-
-    '/home/paul/Documents/Personal/pkairys.github.io/_posts/2018-02-07-Experimental-Post/bokeh_files/lorenz.html'
-
-
-
 [//]: # (This is for my own use when generating the markdown from the ipynb to host bokeh plots)
-{{ "assets/2018-02-07-Experimental-Post/lorenz.html" | absolute }}
+{% include_relative bokeh_files/lorenz.html %}
 
 ## Math
 
