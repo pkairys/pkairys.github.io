@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Experimental Post
-description: Where I troubleshoot things for the blog
+title: No Title Yet
+description: No description Yet
 ispost: True
 ---
 
@@ -85,7 +85,8 @@ fig.set_figwidth(9)
 ```python
 # Using the texas example
 from bokeh.io import save
-from bokeh.embed import components
+from bokeh.embed import autoload_static
+from bokeh.resources import CDN
 from bokeh.models import (
     ColumnDataSource,
     HoverTool,
@@ -138,18 +139,16 @@ hover.tooltips = [
 ]
 
 
-script, div = components(p)
+script, tag = autoload_static(p,CDN, 'bokeh_files/texas_js.js')
 
 with open('./bokeh_files/texas_div.html','w') as d:
-    d.write(div)
+    d.write(tag)
 with open('./bokeh_files/texas_js.js','w') as js:
     js.write(script)
 ```
 
 [//]: # (This is for my own use when generating the markdown from the ipynb to host bokeh plots)
 {% include_relative bokeh_files/texas_div.html %}
-
-{% include_relative bokeh_files/texas_js.js %}
 
 ### Lorenz attractor plot
 
@@ -189,18 +188,16 @@ p = figure(title="lorenz example" )
 p.multi_line(np.array_split(xprime, 7), np.array_split(z, 7),
              line_color=colors, line_alpha=0.8, line_width=1.5)
 
-script, div = components(p)
+cript, tag = autoload_static(p,CDN, 'bokeh_files/lorenz_js.js')
 
 with open('./bokeh_files/lorenz_div.html','w') as d:
-    d.write(div)
+    d.write(tag)
 with open('./bokeh_files/lorenz_js.js','w') as js:
     js.write(script)
 ```
 
 [//]: # (This is for my own use when generating the markdown from the ipynb to host bokeh plots)
 {% include_relative bokeh_files/lorenz_div.html %}
-
-{% include_relative bokeh_files/lorenz_js.js %}
 
 ## Math
 
