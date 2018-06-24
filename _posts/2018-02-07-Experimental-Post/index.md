@@ -1,14 +1,14 @@
 ---
 layout: default
-title: No Title Yet
-description: No description Yet
+title: Workspace Post
+description: A workspace where I test out new functionality.
 ispost: True
 ---
 
 
 
 # This is an experimental test post
-Here I will occasionally edit to test new functionality. Not to be read. 
+Here I will occasionally edit to test new functionality. Not to be read, except by bored people.
 
 ## Matplotlib plots
 
